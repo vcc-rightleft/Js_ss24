@@ -1,6 +1,6 @@
 let a;
-let b;
-let c;
+let b=0;
+let c=0;
 let arr = [];
 do {
     a = Number(
@@ -25,17 +25,17 @@ do {
             console.table(arr);
             break;
     case 3:
-            if (arr.length === 0) {
-                console.log("Mảng chưa được nhập!");
-                break;
-            }
             let sum = 0;
             for (let i = 0; i < b; i++) {
                 for (let j = 0; j < c; j++) {
                     sum += arr[i][j];
                 }
             }
-            console.log("Tổng các phần tử trong mảng:", sum);
+            console.log(sum);
+            break;
+        case 6:
+            arr.reverse();
+            console.log(arr);
             break;
     case 7:
         break;
